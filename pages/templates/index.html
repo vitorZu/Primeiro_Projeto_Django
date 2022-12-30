@@ -1,13 +1,46 @@
+{% load static %}
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <title>Home - Login</title>
 </head>
 <body>
-    <h3>Bem-vindos</h3>
-    <p>Ainda vou fazer alguma coisa aqui...</p>
+    
+    
+    <fieldset>
+        <div class="logologin">
+            <img src="{% static 'icons/Icon_Person.svg' %}" width="30rem" alt="Icon" name="iconlogin" id="iconlogin">
+            <h2>Acesse</h2>
+        </div>
+        <form action="index.html" method="POST">
+            <div>
+                <div>
+                    <label>User:</label>
+                </div>
+                <input type="text" name="loginuser" id="loginuser" placeholder="Insert your username.">
+            </div>
+            <div>
+                <div>
+                    <label for="loginpass">Pass:</label>
+                </div>
+                <input type="password" name="loginpass" id="loginpass" placeholder="Insert your password.">
+            </div>
+            <div class="ancsign">
+                <a href="">Sign-in</a>
+            </div>
+
+            <button type="submit" name="subButton" id="subButton">Login</button>
+        </form>
+    </fieldset>
+
+
+    
+
 </body>
 </html> 
