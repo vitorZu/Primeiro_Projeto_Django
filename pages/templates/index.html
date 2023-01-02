@@ -7,37 +7,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+    <script src="{% static 'js\jquery-3.6.3.min.js' %}"></script>
+    <script defer src="{% static 'js\bootstrap.min.js' %}"></script>
     <title>Home - Login</title>
 </head>
-<body>
+<body  class="bg-dark"> 
+ 
     
-    
-    <fieldset>
-        <div class="logologin">
-            <img src="{% static 'icons/Icon_Person.svg' %}" width="30rem" alt="Icon" name="iconlogin" id="iconlogin">
-            <h2>Acesse</h2>
-        </div>
-        <form action="index.html" method="POST">
-            <div>
-                <div>
-                    <label>User:</label>
-                </div>
-                <input type="text" name="loginuser" id="loginuser" placeholder="Insert your username.">
+    <div class="container bg-light bg-opacity-75 px-4 py-4 my-5 w-50 rounded-4 ">
+        <form method="post" class="mt-5">
+
+            <div class="form-outline mb-4">
+              <input type="email" id="form2Example1" class="form-control" />
+              <label class="form-label" for="form2Example1">Email address</label>
             </div>
-            <div>
-                <div>
-                    <label for="loginpass">Pass:</label>
-                </div>
-                <input type="password" name="loginpass" id="loginpass" placeholder="Insert your password.">
+          
+            <div class="form-outline mb-4">
+              <input type="password" id="form2Example2" class="form-control" />
+              <label class="form-label" for="form2Example2">Password</label>
             </div>
-            <div class="ancsign">
-                <a href="">Sign-in</a>
+          
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
             </div>
 
-            <button type="submit" name="subButton" id="subButton">Login</button>
-        </form>
-    </fieldset>
+            <div class="text-center">
+              <p>Not a member? <a href="#!">Register</a></p>
+            
+            </div>
+          </form>
+
+    </div>
 
 
     
