@@ -1,3 +1,3 @@
 ## Primeiro_Projeto_Django
 
-Brincando com Python na Web
+Um site de Login e Cadastro simples.
